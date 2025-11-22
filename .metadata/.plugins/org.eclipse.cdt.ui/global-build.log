@@ -1,21 +1,21 @@
-23:20:06 **** Incremental Build of configuration Debug for project UART_Example2_IT ****
+13:59:17 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSE ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "UART_Example2_IT.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Udemy\MCU2\workspace\UART_Example2_IT\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_Example2_IT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: UART_Example2_IT.elf
+arm-none-eabi-gcc -o "PLL_SYSCLK_HSE.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Udemy\MCU2\workspace\PLL_SYSCLK_HSE\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PLL_SYSCLK_HSE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PLL_SYSCLK_HSE.elf
  
-arm-none-eabi-size  UART_Example2_IT.elf 
-arm-none-eabi-objdump -h -S UART_Example2_IT.elf  > "UART_Example2_IT.list"
+arm-none-eabi-size  PLL_SYSCLK_HSE.elf 
+arm-none-eabi-objdump -h -S PLL_SYSCLK_HSE.elf  > "PLL_SYSCLK_HSE.list"
    text	   data	    bss	    dec	    hex	filename
-   8500	     16	   1752	  10268	   281c	UART_Example2_IT.elf
+  11196	     92	   1972	  13260	   33cc	PLL_SYSCLK_HSE.elf
 Finished building: default.size.stdout
  
-Finished building: UART_Example2_IT.list
+Finished building: PLL_SYSCLK_HSE.list
  
-23:20:16 **** Incremental Build of configuration Debug for project UART_Example2_IT ****
+13:59:23 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSE ****
 make -j8 all 
-arm-none-eabi-size  UART_Example2_IT.elf 
+arm-none-eabi-size  PLL_SYSCLK_HSE.elf 
    text	   data	    bss	    dec	    hex	filename
-   8500	     16	   1752	  10268	   281c	UART_Example2_IT.elf
+  11196	     92	   1972	  13260	   33cc	PLL_SYSCLK_HSE.elf
 Finished building: default.size.stdout
  
